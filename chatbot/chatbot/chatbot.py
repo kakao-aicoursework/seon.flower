@@ -22,7 +22,7 @@ kakao_sync_txt = os.path.join(CUR_DIR, "data/project_data.txt")
 # openai.api_key = "<YOUR_OPENAI_API_KEY>"
 os.environ["OPENAI_API_KEY"] = open("./key.txt", "r").read()
 
-# 카카오싱크 파일 읽기 
+# 카카오싱크 파일 데이터 읽기 
 def read_prompt_template(file_path: str) -> str:
     with open(file_path, "r") as f:
         prompt_template = f.read()
